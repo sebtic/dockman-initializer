@@ -4,6 +4,8 @@ set -e
 
 export BASE_DIR="$PWD"
 
+git config --global init.defaultBranch main
+
 if [ ! -d .git ]; then
     git init .
 fi
