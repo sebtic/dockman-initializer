@@ -38,11 +38,11 @@ chmod +x dockman
 git add dockman
 
 if [ ! -d bin ]; then 
-    git submodule add https://github.com/sebtic/dockman-bin.git bin
+    git submodule add git@github.com:sebtic/dockman-bin.git bin
 fi
 
 if [ ! -d global ]; then
-    git submodule add https://github.com/sebtic/dockman-global.git global
+    git submodule add git@github.com:sebtic/dockman-global.git global
 fi
 
 mkdir -p stacks override
