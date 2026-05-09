@@ -5,7 +5,6 @@ set -e
 export BASE_DIR="$PWD"
 
 git config --global init.defaultBranch main
-git config credential.helper store
 
 if [ ! -d .git ]; then
     git init .
