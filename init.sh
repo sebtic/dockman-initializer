@@ -4,11 +4,11 @@ set -e
 
 export BASE_DIR="$PWD"
 
-git config --global init.defaultBranch main
-
 if [ ! -d .git ]; then
     git init .
 fi
+
+git config --global init.defaultBranch main
 
 cat <<EOF > .gitignore
 # do not version override directories since it contains secrets and specific configuration
